@@ -1,0 +1,69 @@
+<com.yalin.materialdrawer.weight.DepthRenderer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.yalin.materialdrawer.weight.DepthLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8E8E8"
+        android:layerType="hardware"
+        app:custom_elevation="1dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ma_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingTop="80dp" />
+
+    </com.yalin.materialdrawer.weight.DepthLayout>
+
+    <com.yalin.materialdrawer.weight.DepthLayout
+        android:id="@+id/ma_appBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:layerType="hardware"
+        app:edge_color="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/staturbar_bg"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <ImageView
+            android:id="@+id/menu"
+            style="@style/SelectableItemBackgroundBorderless"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="73dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/fragment_name_wallpaper"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </com.yalin.materialdrawer.weight.DepthLayout>
+
+    <ImageView
+        android:id="@+id/actionbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/ma_appBar"
+        android:background="@drawable/actionbar_shadow" />
+
+</com.yalin.materialdrawer.weight.DepthRenderer>

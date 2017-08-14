@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MaterialDrawer</string>
+
+    <string name="fragment_name_home">"Menu"</string>
+    <string name="fragment_name_wallpaper">"Wallpapers"</string>
+
+    <string name="fragment_home_text_home">"Home text"</string>
+</resources>

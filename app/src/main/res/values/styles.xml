@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SelectableItemBackgroundBorderless">
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:theme">@style/RippleColorTheme</item>
+    </style>
+
+    <style name="RippleColorTheme">
+        <item name="colorControlHighlight">@color/translucent_white</item>
+    </style>
+
+</resources>
